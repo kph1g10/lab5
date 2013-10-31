@@ -3,9 +3,13 @@
 
 <!-- main content -->
 <div id="content" class="row">
+	<?php
+	require('includes/db.php');
+	$manufacturers = $db->query("SELECT * FROM manufacturer WHERE id={$_GET["id"]}");
+	$manufacturer = $manufacturers->fetch_object();
 	
-	<h2>See all cars we have available from [MANUFACTURER NAME]</h2>
-		
+	echo "<h2>See all cars we have available from {$manufacturer->name}</h2>";
+	?>
 	<!-- car list -->
 	<div id="car-list" class="row">
 		
