@@ -32,8 +32,9 @@
 				echo "</div>";
 				
 				echo "<div class=\"row\">";
-				echo "<div class=\"col-md-4\"><strong>{$car->regDate} {$car->regNumber}</strong></div>";
-				echo "<div class=\"col-md-6\"><strong>&pound{$car->price}</strong></div>";
+				echo "<div class=\"col-md-4\"><strong>Reg Year: {$car->regDate}</strong></div>";
+				echo "<div class=\"col-md-4\"><strong>Reg Number: {$car->regNumber}</strong></div>";
+				echo "<div class=\"col-md-4\"><strong>Price: &pound{$car->price}</strong></div>";
 				echo "</div>";
 				
 				echo "<div class=\"row\">";
