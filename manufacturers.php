@@ -8,8 +8,15 @@
 		
 	<!-- manufacturer list -->
 	<div id="manufacturer-list" class="row">
-		<?php require('includes/db.php'); ?>
 		
+		<?php require('includes/db.php'); 
+		$manufacturers = $db->query("SELECT manufacturer.id, manufacturer.name FROM manufacturer");
+		while($manufacturer = $manufacturers->fetch_object()){
+		
+			echo "<h3> {$manufacturer->name} - {$manufacturer->id} </h3>";
+		}
+		
+		?>
 		
 	</div><!-- /manufacturer list -->
 	
