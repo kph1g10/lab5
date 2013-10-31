@@ -10,4 +10,3 @@
 		public  $regDate;
 	}
 ?>
-// car class for part 1
