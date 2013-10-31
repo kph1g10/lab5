@@ -9,9 +9,13 @@
 	<!-- car list -->
 	<div id="car-list" class="row">
 		
-		<?php print_r($_GET["id"]); ?>
+		<?php 
+			require('includes/db.php');
+			require('classes/car.class.php');
+					
+		?>
 	
-	
+		
 	</div><!-- /car list -->
 	
 </div><!-- /main content -->
